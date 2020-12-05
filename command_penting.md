@@ -1,21 +1,21 @@
 # manjaro
-* remove unused package
+## remove unused package
     pacman -Qdt
     pacman -Scc
 
-* update aur package
+## update aur package
     trizen -Syua
 
-* battery: status
+## battery: status
     upower --dump
 
-* bluetooth start service
+## bluetooth start service
     sudo systemctl start bluetooth
 
-* bluetooth show configuration
+## bluetooth show configuration
     cat /etc/bluetooth/main.conf
 
-* remote rdp
+## remote rdp
     xfreerdp /v:192.168.0.132 /u:skai
 
 # routing: add routing
@@ -32,31 +32,31 @@
     sudo primusrun steam steam://rungameid/570 -info
 
 # github
-* clone repository
+## clone repository
     git clone https://github.com/USERNAME/REPOSITORY_NAME.git
 
-* reset local, ambil dari repository remote
+## reset local, ambil dari repository remote
     git reset --hard origin/master
     git pull
 
 # flutter
-* flutter connect device
+## flutter connect device
     adb tcpip 5555
     adb connect device_ip_address
 
-* launch multiple device flutter
+## launch multiple device flutter
     flutter run -d all
 
-* build app bundle for smaller size
+## build app bundle for smaller size
     flutter build appbundle
 
-* flutter web
+## flutter web
     flutter build web
     cd build/web/
     python -m http.server 8000
     firebase deploy
 
-* run relase mode
+## run relase mode
     flutter run --release
     flutter run --profile
 
@@ -69,10 +69,10 @@
     ngrok http 192.168.10.10:8000 -host-header=saharga.dev
 
 # docker
-* start services
+## start services
     sudo systemctl start docker
 
-* remove file docker
+## remove file docker
     var/lib/docker
     docker system prune -a
 
