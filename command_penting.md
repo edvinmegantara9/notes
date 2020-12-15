@@ -242,3 +242,11 @@
         show ip/route
     sudo nmap -p21 -script ftp-brute.nse -script-args \ userdb=/usr/share/wordlists/nmap.lst,passdb=/usr/share/wordlists/nmap.lst 192.168.43.2
         ftp brute force
+
+# Lumen
+
+    serve project : php -S localhost:8000 -t public
+
+# Angular
+
+    build project : npm run build -- --prod --aot --output-hashing=all
